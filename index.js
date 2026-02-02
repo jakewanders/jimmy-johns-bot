@@ -79,7 +79,7 @@ client.on("message", async message => {
             headers.__requestverificationtoken = requestverificationtokenCookie;
 
             // get the locations
-            request.post("https://online.jimmyjohns.com/api/vendors/search?address=1954%20Maple%20Ave&building=&city=Loves%20Park&zipCode=61111&handoffMode=Delivery&timeWantedType=2",
+            request.post("https://online.jimmyjohns.com/api/vendors/search?address=address&building=&city=city&zipCode=zip_code&handoffMode=Delivery&timeWantedType=2",
             {
                 headers: {
                     "__requestverificationtoken": requestverificationtokenCookie,
